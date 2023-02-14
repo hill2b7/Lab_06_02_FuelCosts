@@ -20,6 +20,7 @@ public class Main
             if (in.hasNextInt()) //if input is good the code block below will run
             {
                 gallonsOfGas = in.nextInt(); //sets the variable equal to the input
+                in.nextLine(); //clears the buffer
                 System.out.println("You entered " + gallonsOfGas + " gallons of gas.");
             }
             else // code block will run if received input was incorrect
@@ -32,6 +33,7 @@ public class Main
             if (in.hasNextInt()) //tests to see if the input is correct if correct the code block will run
             {
                 milesPerGallon = in.nextInt(); //sets the variable equal to the input
+                in.nextLine(); //clears the buffer
                 System.out.println("You entered " + milesPerGallon + " miles per gallon."); //echo's what the user entered for confirmation
             }
             else // run's code block below if input is wrong
@@ -44,6 +46,7 @@ public class Main
             if (in.hasNextDouble()) //tests if the input is a double, if it is the code below will run
             {
                 priceOfGas = in.nextDouble(); //sets price of gas variable to the input received by user
+                in.nextLine(); //clears the buffer
                 System.out.println("You entered " + priceOfGas + " for the cost of a gallon of gas."); //echoes what the user entered for confirmation
                 totalPerMiles = gallonsOfGas * milesPerGallon; //calculation for total miles able to travel on full tank of gas
                 costPerMileage = priceOfGas / milesPerGallon; //calculation for the fuel cost per mile of travel based on what information is provided
