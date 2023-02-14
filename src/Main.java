@@ -8,7 +8,6 @@ public class Main
         int milesPerGallon = 0;
         int TRAVELED_MILEAGE = 100;
         double priceOfGas = 0;
-        double costToFill = 0;
         double totalPerMiles = 0;
         double costPerMileage = 0;
         double costForTravel = 0;
