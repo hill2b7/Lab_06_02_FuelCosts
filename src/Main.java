@@ -26,7 +26,7 @@ public class Main
                 System.out.println("Enter the price of gas per gallon: "); //output asking the user for input
                 if (in.hasNextDouble()) //checks to see if the input is a double. If the input is a double the code block below will run
                 {
-                    priceOfGas = in.nextDouble();
+                    priceOfGas = in.nextDouble(); //sets price of gas variable to the input that was received by the end user
                     totalPerMiles = gallonsOfGas * milesPerGallon; //calculation to get the total mileage that you can travel with a full tank
                     costPerMileage = priceOfGas / milesPerGallon; //calculation to get the cost per mile
                     costForTravel = costPerMileage * TRAVELED_MILEAGE; //calculation to get the cost if you were to travel 100 miles
@@ -49,8 +49,8 @@ public class Main
         }
         else // if input is not an integer then the code block below will run
         {
-            trash = in.nextLine(); // sets
-            System.out.println("You entered an incorrect value " + trash);
+            trash = in.nextLine(); //sets trash string to string input that iss received by the end user
+            System.out.println("You entered an incorrect value " + trash); //output that lets the user know that the input received is incorrect
         }
 
 
